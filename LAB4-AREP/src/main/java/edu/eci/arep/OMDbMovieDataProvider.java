@@ -8,7 +8,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * Movie information provider (OMDb)
+ * Proveedor de información de películas (OMDb)
  *
  * @author Juan Felipe Vivas Manrique
  */
@@ -17,6 +17,12 @@ public class OMDbMovieDataProvider implements MovieDataProvider {
     private static final String GET_URL = "http://www.omdbapi.com/?apikey=f70773ff&t=";
     private static final Logger LOGGER = Logger.getLogger(OMDbMovieDataProvider.class.getName());
 
+    /**
+     * Recupera datos de la película utilizando el servicio web OMDb.
+     *
+     * @param titleValue El título de la película para buscar información.
+     * @return Una cadena que contiene la información de la película en formato JSON.
+     */
     @Override
     public String fetchMovieData(String titleValue) {
         String outputLine = null;
@@ -26,18 +32,18 @@ public class OMDbMovieDataProvider implements MovieDataProvider {
             HttpRequest request = HttpRequest.newBuilder().uri(URI.create(GET_URL + titleValue)).header("User-Agent", USER_AGENT).GET().build();
             HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
             int responseCode = response.statusCode();
-            LOGGER.log(Level.INFO, "GET Response Code :: {0}", responseCode);
+            LOGGER.log(Level.INFO, "Código de respuesta GET :: {0}", responseCode);
 
-            if (responseCode == 200) { // success
+            if (responseCode == 200) { 
                 String movieInformation = response.body();
-                LOGGER.log(Level.INFO, "Response body: {0}", movieInformation);
+                LOGGER.log(Level.INFO, "Cuerpo de la respuesta: {0}", movieInformation);
                 outputLine = movieInformation;
             } else {
-                LOGGER.info("GET request not worked");
+                LOGGER.info("La solicitud GET no funcionó");
             }
-            LOGGER.info("GET DONE");
+            LOGGER.info("GET COMPLETADO");
         } catch (Exception e) {
-            LOGGER.log(Level.WARNING, "Error fetching movie data: {0}", e.getMessage());
+            LOGGER.log(Level.WARNING, "Error al recuperar datos de la película: {0}", e.getMessage());
             Thread.currentThread().interrupt();
         }
         return outputLine;
