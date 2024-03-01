@@ -12,10 +12,10 @@ import java.util.logging.Logger;
  *
  * @author Juan Felipe Vivas Manrique
  */
-public class OMDbMovieDataProvider implements MovieDataProvider {
+public class APIRestMovies implements MovieDataProvider {
     private static final String USER_AGENT = "Mozilla/5.0";
     private static final String GET_URL = "http://www.omdbapi.com/?apikey=f70773ff&t=";
-    private static final Logger LOGGER = Logger.getLogger(OMDbMovieDataProvider.class.getName());
+    private static final Logger LOGGER = Logger.getLogger(APIRestMovies.class.getName());
 
     /**
      * Recupera datos de la película utilizando el servicio web OMDb.

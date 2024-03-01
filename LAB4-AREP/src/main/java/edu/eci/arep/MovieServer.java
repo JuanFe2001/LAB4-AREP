@@ -32,24 +32,24 @@ import java.util.logging.Logger;
  * 
  */
 
-public class MovieInfoServer {
-    private static final MovieInfoServer _instance = new MovieInfoServer();
+public class MovieServer {
+    private static final MovieServer _instance = new MovieServer();
     protected static HashMap<String, Method> components = new HashMap<>();
-    private static final Logger LOGGER = Logger.getLogger(MovieInfoServer.class.getName());
+    private static final Logger LOGGER = Logger.getLogger(MovieServer.class.getName());
     private static String directory = "target/classes/public";
     private static String contentType = "text/html";
 
-    private MovieInfoServer() {
+    private MovieServer() {
         // Constructor privado para prevenir la instanciación directa de la clase.
         // Enforces the use of the singleton pattern.
     }
 
     /**
-     * Retorna la instancia única de la clase MovieInfoServer (implementa el patrón singleton).
+     * Retorna la instancia única de la clase MovieServer (implementa el patrón singleton).
      *
-     * @return La instancia de MovieInfoServer.
+     * @return La instancia de MovieServer.
      */
-    public static MovieInfoServer getInstance() {
+    public static MovieServer getInstance() {
         return _instance;
     }
 
