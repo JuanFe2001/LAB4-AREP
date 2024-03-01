@@ -59,7 +59,7 @@ que queramos para cambiar la pelicula solo tenemos que cambiar la parte title = 
 Vemos el correcto funcionamiento de client.html y las busquedas de peliculas
 
 # Generar el JavaDoc
-Para Generar el JavaDoc en la consola en la carpeta Lab1 por consola ponemos el siguiente comando
+Para Generar el JavaDoc en la consola ponemos el siguiente comando
 
 * mvn site
 
