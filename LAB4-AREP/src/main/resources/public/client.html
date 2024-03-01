@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="client.css">
+    <title>Buscador de películas</title>
+</head>
+<body>
+<div class="container">
+    <h1>Buscador de películas</h1>
+    <label for="name">Nombre de la película:</label>
+    <input type="text" id="name" name="name" placeholder="Escribe aquí">
+    <input type="button" value="Buscar" onclick="client.loadGetMsg()">
+    <div id="getrespmsg" class="movie-details">
+        <img id="poster" src="" alt="Movie Poster">
+        <div>
+            <h2 class="title">Título de la película</h2>
+            <p class="director">Director: Nombre del director</p>
+            <p class="released">Fecha de lanzamiento: Fecha de lanzamiento de la película</p>
+            <p class="actors">Actores: Lista de actores principales</p>
+            <p class="language">Idioma: Idioma de la película</p>
+            <p class="plot">Trama: Descripción de la trama de la película</p>
+        </div>
+    </div>
+</div>
+
+<script src="client.js"></script>
+</body>
+</html>
