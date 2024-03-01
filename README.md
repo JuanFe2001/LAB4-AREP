@@ -35,3 +35,47 @@ Si queremos ejecutarlo de la otra forma solo tenemos que correr la clase Main co
 
 ## NOTA:
 En los dos casos lo mas recomendable para ver el funcionamiento de la pagina es utilizar el Navegador de FireFox
+
+## DEMOSTRACION
+## (Prueba1)
+![image](https://github.com/JuanFe2001/LAB4-AREP/assets/123691538/897ff5f0-59fd-4b3c-b089-4ef3ab05cfca)
+![image](https://github.com/JuanFe2001/LAB4-AREP/assets/123691538/ddf7ec88-49e6-4ccc-ade7-69d4a9d2041b)
+Con la ruta http://localhost:35000/element/hola?nombre=Felipe podemos probarlo donde en nombre =
+podemos poner la frase que queramos
+## (Prueba2)
+![image](https://github.com/JuanFe2001/LAB4-AREP/assets/123691538/47d3f25a-b50c-4921-862b-cb4459d8fc6d)
+![image](https://github.com/JuanFe2001/LAB4-AREP/assets/123691538/2d999b28-2dc2-4f32-8096-f2aa1b92dfb2)
+Aca podemos ver que con esta ruta http://localhost:35000/element/movies?title=Cars nos trae el archivo Json de la pelicula
+que queramos para cambiar la pelicula solo tenemos que cambiar la parte title = "Nombre de la pelicula que queremos el archivo"
+## (Prueba3)
+![image](https://github.com/JuanFe2001/LAB4-AREP/assets/123691538/073d1a46-35c4-49ba-9c45-f97a64a71f3b)
+![image](https://github.com/JuanFe2001/LAB4-AREP/assets/123691538/437430d6-49c6-4ea2-b1cd-8efa2366cb36)
+## (Prueba4)
+![image](https://github.com/JuanFe2001/LAB4-AREP/assets/123691538/e81597a2-d5eb-4199-be92-ba9711a7a68a)
+![image](https://github.com/JuanFe2001/LAB4-AREP/assets/123691538/977f59ec-aa26-4757-bf9d-a2c0a27fa67c)
+![image](https://github.com/JuanFe2001/LAB4-AREP/assets/123691538/e85b87c4-7de7-4662-a6dc-4b2d26bb69fa)
+![image](https://github.com/JuanFe2001/LAB4-AREP/assets/123691538/5656c5cd-136a-45c4-a5a2-94716c822c85)
+![image](https://github.com/JuanFe2001/LAB4-AREP/assets/123691538/c5c3e4d2-855f-4e62-98d0-ca8f9e8c54f8)
+Vemos el correcto funcionamiento de client.html y las busquedas de peliculas
+
+# Generar el JavaDoc
+Para Generar el JavaDoc en la consola en la carpeta Lab1 por consola ponemos el siguiente comando
+
+* mvn site
+
+## Autor
+* Juan Felipe Vivas Manrique
+
+
+
+
+
+
+
+
+
+
+
+
+
+
